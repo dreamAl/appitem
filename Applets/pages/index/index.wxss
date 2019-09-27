@@ -1,0 +1,75 @@
+.searchBox{
+  width: 100%;
+  height:116rpx;
+  background: #efefef;
+  overflow: hidden;
+  position: relative;
+}
+input{
+  width: 90%;
+  height:70rpx;
+  background: white;
+  border-radius: 50rpx;
+  margin:25rpx 5% 0; 
+  text-indent: 280rpx; 
+}
+.seaImg{
+  width: 60rpx;
+  height:60rpx;
+  position: absolute;
+  top:35rpx;
+  left:250rpx;
+ 
+}
+.seaImg>image{
+  width: 90%;
+  height:90%;
+}
+.swpBox{
+  width: 100%; 
+  height:400rpx;
+}
+.imgBox{
+  width: 100%;
+  height:100%;
+}
+.swpBox.wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.swpBox .wx-swiper-dot{
+    width:30rpx;
+    display: inline-flex;
+    height: 5rpx;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swpBox .wx-swiper-dot::before{
+   content: '';
+    flex-grow: 1; 
+    background: rgba(255,255,255,1);  
+}
+.swpBox .wx-swiper-dot-active::before{
+    background:#3371aa; 
+}
+.routeBox{
+  width: 100%;
+  height:92rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color:#323232;
+  display: flex;
+  overflow: auto;
+  line-height: 92rpx;
+  text-align: center;
+ /* align-items: center; */
+}
+.routeBox navigator{
+  flex-shrink:0;
+  /* margin: 0 30rpx;  */
+  width: 207rpx;
+  height:88rpx;   
+}
+.nav{
+  color:#4697e4;
+  border-bottom: 4rpx solid #4697e4;
+}

@@ -1,0 +1,23 @@
+<view>
+  <import src="search.wxml"/>
+  <template is="searchTem"></template>
+</view>
+<view >
+  <swiper autoplay  indicator-dots class="swpBox" circular>
+  <block wx:for="{{arr}}">
+    <swiper-item>
+     <image src="{{item.image}}" class="imgBox" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+<view class="routeBox">
+  <navigator bindtap="funa" hover-class="nav">面膜系列</navigator>
+  <navigator>新品上新</navigator>
+  <navigator>人气套装</navigator>
+  <navigator>心机彩妆</navigator>
+  <navigator>功效护理</navigator>
+  <navigator>个护清洁</navigator>
+  <navigator>基础护肤</navigator>
+  <navigator>男士护理</navigator>
+</view>
