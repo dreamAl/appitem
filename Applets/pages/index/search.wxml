@@ -8,3 +8,20 @@
   </form> 
   </view>
 </template>
+<template name="listTem">
+  <view class="listBox">
+    <image src="../../img/1.jpg" class="imgStyle"></image>
+    <view class="textBox">
+    <view class="line">
+      <text class="one">买2件加送24片</text>
+      <text class="two">WIN水润面膜套装24片</text>
+    </view>
+      <text class="three">深透补水 薄透鲜薄深透补水 薄透鲜薄深透补水 薄</text>
+       <text class="four">￥98.00</text>
+        <text class="delpri">299.00</text>
+        <text class="buy">购买</text>    
+    </view>
+  </view>
+</template>
+
+

@@ -61,15 +61,81 @@ input{
   overflow: auto;
   line-height: 92rpx;
   text-align: center;
- /* align-items: center; */
 }
 .routeBox navigator{
   flex-shrink:0;
-  /* margin: 0 30rpx;  */
-  width: 207rpx;
+  width: 190rpx;
   height:88rpx;   
 }
 .nav{
   color:#4697e4;
   border-bottom: 4rpx solid #4697e4;
+}
+.con{
+  width: 100%;
+  background: #eeeeee;
+}
+
+.listBox{
+  width: 360rpx;
+  height:600rpx;
+  background: white;
+}
+.imgStyle{
+  width: 95%;
+  height:350rpx;
+  margin: 10rpx;
+}
+.textBox{
+  width: 95%;
+  margin: 10rpx;
+}
+.line{
+  width: 75%;
+  height: 50rpx;
+  display: flex;
+  white-space: nowrap;
+/* 小程序单行文本添加省略号 */
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  overflow: hidden;
+   text-overflow: ellipsis;
+  -webkit-box-orient:vertical;
+  word-break: break-all;  
+}
+.one{
+  width: 150rpx;
+  line-height: 28rpx;
+  padding:10rpx;
+  background: red;
+  font-size:22rpx;
+  color:white;
+  border-radius: 5rpx;
+}
+.two{
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.three{
+  font-size: 24rpx;
+  color:#eeeeee;
+}
+.four{
+  font-size: 35rpx;
+  color:red;
+  font-weight: bolder;
+}
+.delpri{
+  font-size: 26rpx;
+  color:gray;
+  text-decoration: line-through;
+}
+.buy{
+   font-size: 26rpx;
+    color:white;
+    padding: 10rpx;
+    background:red;
+    border-radius: 10rpx;
+    margin-left: 60rpx;
 }

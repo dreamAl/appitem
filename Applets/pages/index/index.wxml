@@ -21,3 +21,7 @@
   <navigator>基础护肤</navigator>
   <navigator>男士护理</navigator>
 </view>
+<view class="con">
+  <import src="search.wxml"/>
+  <template is="listTem"></template>
+</view>
