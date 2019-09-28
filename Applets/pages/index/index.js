@@ -1,28 +1,104 @@
 var datarr = require('../../data/lunbotu.js')
+var dataobj=require("../../data/sort.js")
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    arr:""
+    arr:"",
+    obj:"",
+    newarr:[],
+    currentTab:0,
+    bool:true
   },
-  funa(){
+  funa(e){
+    // console.log(e)
+    if (e){
+      switch (e.currentTarget.dataset.id) {
+        case 575:
+          this.setData({
+            currentTab: 0
+          })
+          break;
+        case 582:
+          this.setData({
+            currentTab: 1
+          })
+          break;
+        case 576:
+          this.setData({
+            currentTab: 2
+          })
+          break;
+        case 577:
+          this.setData({
+            currentTab: 3
+          })
+          break;
+        case 578:
+          this.setData({
+            currentTab: 4
+          })
+          break;
+        case 579:
+          this.setData({
+            currentTab: 5
+          })
+          break;
+        case 580:
+          this.setData({
+            currentTab: 6
+          })
+          break;
+        case 581:
+          this.setData({
+            currentTab: 7
+          })
+          break;
+      }
+    }
+      
     wx.showLoading({
       title: '数据加载中',
-      success() {
-        setTimeout(() => {
-          // 显示1秒后隐藏loading提示框
+      mask:true,
+    })
+       setTimeout(() => {
+         var id =0;
+         if(e){
+           id = e.currentTarget.dataset.id
+         }else{
+           id=575
+         }
+         var arr1 = this.data.obj.filter((v, i) => {
+           if (v.id == id) {
+             return v
+           }
+         })
+         // console.log(arr1[0].data)
+         this.setData({
+           newarr: arr1[0].data
+         })
           wx.hideLoading()
         }, 1000)
-      }
+  },
+  funb(){
+    this.setData({
+      bool:!this.data.bool
+    })
+  },
+  fune(){
+    wx.navigateTo({
+      url: '../detail/detail',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(datarr.postList)
     this.setData({arr:datarr.postList})
+    console.log(dataobj.titList)
+    this.setData({ obj: dataobj.titList.items })
+    this.funa()
   },
 
   /**

@@ -1,27 +1,34 @@
 <view>
+  <!-- 首页搜索 -->
   <import src="search.wxml"/>
   <template is="searchTem"></template>
 </view>
+<!-- 轮播图 -->
 <view >
   <swiper autoplay  indicator-dots class="swpBox" circular>
-  <block wx:for="{{arr}}">
+  <block wx:for="{{arr}}" wx:key="{{index}}">
     <swiper-item>
      <image src="{{item.image}}" class="imgBox" mode="widthFix"></image>
     </swiper-item>
   </block>
   </swiper>
 </view>
+<!-- 二级路由跳转 -->
 <view class="routeBox">
-  <navigator bindtap="funa" hover-class="nav">面膜系列</navigator>
-  <navigator>新品上新</navigator>
-  <navigator>人气套装</navigator>
-  <navigator>心机彩妆</navigator>
-  <navigator>功效护理</navigator>
-  <navigator>个护清洁</navigator>
-  <navigator>基础护肤</navigator>
-  <navigator>男士护理</navigator>
+  <text bindtap="funa"  wx:for="{{obj}}"  data-id="{{item.id}}" wx:key="{{index}}" class="{{currentTab == index ? 'active' : '' }}">{{item.cate_name}}</text>
 </view>
 <view class="con">
   <import src="search.wxml"/>
-  <template is="listTem"></template>
+  <block wx:for="{{newarr}}" wx:key="{{index}}">
+    <template is="listTem" data="{{...item}}">
+    <!-- 查看更多槽口  不能用 -->
+    <view bindtap="funb" wx:if="{{item.btnNum}}" class="btn" >点击查看 所有商品</view>
+    <view wx:else >
+  我是所有商品
+    </view>
+    </template>
+  </block>
 </view>
+ 
+
+

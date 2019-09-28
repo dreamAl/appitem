@@ -1,3 +1,4 @@
+<!-- 搜索组件 -->
 <template name="searchTem">
   <view class="searchBox">
   <form>
@@ -8,19 +9,23 @@
   </form> 
   </view>
 </template>
+
+<!-- 商品列表组件 -->
 <template name="listTem">
-  <view class="listBox">
-    <image src="../../img/1.jpg" class="imgStyle"></image>
+    <view class="listBox">
+      <image src="{{image}}" class="imgStyle" bindtap="fune"></image>
     <view class="textBox">
     <view class="line">
-      <text class="one">买2件加送24片</text>
-      <text class="two">WIN水润面膜套装24片</text>
+      <text class="one" wx:if="{{label}}">{{label}}</text>
+      <text class="two">{{product_name}}</text> 
     </view>
-      <text class="three">深透补水 薄透鲜薄深透补水 薄透鲜薄深透补水 薄</text>
-       <text class="four">￥98.00</text>
-        <text class="delpri">299.00</text>
-        <text class="buy">购买</text>    
+      <text class="three">{{description}}\n</text>
+        <text class="four">{{real_price}}</text>
+        <text class="delpri">{{original_price}}</text>
+        <text class="buy">购买</text>  
     </view>
+    <slot ></slot>
+    <slot ></slot>
   </view>
 </template>
 

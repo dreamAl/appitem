@@ -62,24 +62,26 @@ input{
   line-height: 92rpx;
   text-align: center;
 }
-.routeBox navigator{
+.routeBox text{
   flex-shrink:0;
   width: 190rpx;
   height:88rpx;   
 }
-.nav{
+.active{
   color:#4697e4;
   border-bottom: 4rpx solid #4697e4;
 }
 .con{
   width: 100%;
-  background: #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8f8f8;
 }
-
 .listBox{
-  width: 360rpx;
+  width: 47%;
   height:600rpx;
-  background: white;
+  background: white; 
+  margin:30rpx 10rpx 0;
 }
 .imgStyle{
   width: 95%;
@@ -91,7 +93,7 @@ input{
   margin: 10rpx;
 }
 .line{
-  width: 75%;
+  width: 79%;
   height: 50rpx;
   display: flex;
   white-space: nowrap;
@@ -107,9 +109,9 @@ input{
   width: 150rpx;
   line-height: 28rpx;
   padding:10rpx;
-  background: red;
+  background: #e95d57;
   font-size:22rpx;
-  color:white;
+  color:#f8eded;
   border-radius: 5rpx;
 }
 .two{
@@ -119,23 +121,36 @@ input{
 }
 .three{
   font-size: 24rpx;
-  color:#eeeeee;
+  color:#8d8d8d;
+  display: inline-block;
+  height: 75rpx;
 }
 .four{
   font-size: 35rpx;
-  color:red;
+  color:#e95d57;
   font-weight: bolder;
 }
 .delpri{
   font-size: 26rpx;
-  color:gray;
+  color:#808080;
   text-decoration: line-through;
 }
 .buy{
    font-size: 26rpx;
-    color:white;
+    color:#f9dddc;
     padding: 10rpx;
-    background:red;
+    background:#e95d57;
     border-radius: 10rpx;
     margin-left: 60rpx;
+}
+.btn{
+  width: 607rpx;
+  height:70rpx;
+  background: #498adb;
+  line-height: 70rpx;
+  color:white;
+  font-size: 28rpx;
+  font-weight: bold;
+  border-radius: 10rpx;
+  margin: 50rpx 80rpx 40rpx;
 }
