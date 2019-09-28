@@ -1,1 +1,9 @@
-/* pages/detail/detail.wxss */
+.dsw{
+  width: 100%;
+  height:460px;
+  background: pink;
+}
+.dsw image{
+  width: 100%;
+  height:100%;
+}

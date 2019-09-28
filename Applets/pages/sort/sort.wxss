@@ -1,1 +1,77 @@
-/* pages/sort/sort.wxss */
+.sBox{
+  width: 100%;
+  height:1000rpx;
+  display: flex;
+}
+.sleft{
+  width: 20%;
+  height:100%;
+  border-right:1rpx solid #DCDCDC;
+  /* position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0rpx; */
+}
+.sright{
+  width: 80%;
+  /* height:2000rpx;   */
+  border-top:1rpx solid #E3E3E3;
+}
+.stop{
+  width: 100%;
+  height: 122rpx;
+  background: #EFEFEF;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:20%;
+  right:0rpx;
+}
+.stop input{
+  width: 550rpx;
+  margin:25rpx;
+  height:70rpx;
+  background: white;
+  border-radius: 50rpx;
+  text-indent: 220rpx;
+}
+.simg{
+  width: 36rpx;
+  height:36rpx;
+  position: absolute;
+  top:45rpx;
+  left: 200rpx;
+}
+.tema{
+  margin-top:120rpx;
+  width:95%;
+  height: 120rpx;
+  display: flex;
+  border-bottom:2rpx solid #F2F2F2;
+  margin-left: 30rpx;
+}
+.tema image{
+  width: 70rpx;
+  height:70rpx;
+  margin: 20rpx 20rpx 20px 0;
+}
+.txtBox{
+  margin-top: 15rpx;
+}
+.txtBox text:nth-child(1){
+  font-size:30rpx;
+  font-weight: bold;
+  color:#515151;
+}
+.txtBox text:nth-child(2){
+  font-size:30rpx;
+  font-weight: bold;
+  color:#DD6162;
+}
+.txtBox text:nth-child(3){
+  text-decoration: line-through;
+  font-size:26rpx;
+  color:#979797;
+}

@@ -1,2 +1,10 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view>
+<swiper class="dsw" autoplay indicator-dots>
+<swiper-item>
+<image src="../../img/1.jpg" mode="widthFix" ></image>
+</swiper-item>
+<swiper-item>
+<image src="../../img/1.jpg" mode="widthFix"></image>
+</swiper-item>
+</swiper>
+</view>

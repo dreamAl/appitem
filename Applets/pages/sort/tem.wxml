@@ -1,0 +1,10 @@
+<template name="stem">
+<view class="tema">
+  <image src="../../img/1.jpg"></image>
+  <view class="txtBox">
+  <text>我我我我我我我我我</text>
+  <text>￥98.00/n</text>    
+  <text>299.00</text>
+  </view>
+</view>
+</template>

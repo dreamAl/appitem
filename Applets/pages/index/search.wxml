@@ -13,7 +13,7 @@
 <!-- 商品列表组件 -->
 <template name="listTem">
     <view class="listBox">
-      <image src="{{image}}" class="imgStyle" bindtap="fune"></image>
+      <image src="{{image}}" class="imgStyle" bindtap="fune" lazy-load></image>
     <view class="textBox">
     <view class="line">
       <text class="one" wx:if="{{label}}">{{label}}</text>

@@ -1,4 +1,18 @@
+<view class="sBox">
+<!-- 左边分栏 -->
+<view class="sleft">
 
-<view>
-    <view>我是分类页面</view>
+</view>
+<!-- 右边分栏 -->
+<view class="sright">
+<view class="stop">
+<input type="text" placeholder="搜索热门产品"placeholder-style="color:#323232"></input>
+<image src="../../img/ss.png" class="simg"></image>
+</view>
+<view class="temBox">
+<import src="tem.wxml"/>
+<template is="stem"></template>
+</view>
+
+</view>
 </view>
