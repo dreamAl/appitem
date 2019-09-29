@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/sort/sort",
+    "pages/detail/detail",
     "pages/index/index",
-    
+    "pages/sort/sort",
     "pages/shoppingcar/shoppingcar",
-    "pages/my/my"
+    "pages/my/my"    
   ],
   "window": {
     "navigationBarBackgroundColor": "#4697e4",

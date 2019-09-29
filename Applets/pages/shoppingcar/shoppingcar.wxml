@@ -1,4 +1,9 @@
-
-<view>
-    <view>我是购物车页面</view>
+<view class="all">
+<view class="cent">
+<image src="../../img/empty.svg"></image>
+<text>购物车是空的哦\t~</text>
+<text>可以去看看有哪些想买</text>
+<button size="mini" bindtap="fun">随便逛逛</button>
 </view>
+</view>
+

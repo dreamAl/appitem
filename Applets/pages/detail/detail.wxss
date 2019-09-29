@@ -1,9 +1,148 @@
 .dsw{
   width: 100%;
-  height:460px;
-  background: pink;
+  height:828rpx;
 }
-.dsw image{
+.dsw image:nth-child(1){
   width: 100%;
   height:100%;
 }
+.dsw.wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.dsw .wx-swiper-dot{
+    width:30rpx;
+    display: inline-flex;
+    height: 5rpx;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.dsw .wx-swiper-dot::before{
+   content: '';
+    flex-grow: 1; 
+    background: rgba(255,255,255,1);  
+}
+.dsw .wx-swiper-dot-active::before{
+    background:#3371aa; 
+}
+.title{
+  width: 95%;
+  height:242rpx;
+  margin:20rpx;
+  /* background: pink; */
+}
+.title .tits{
+  font-size: 20rpx;
+  color:#ffe1d4;
+  width: 164rpx;
+  height:30rpx;
+  background: #f3544e;
+}
+.title text:nth-child(2){
+  display: inline-block;
+  font-size: 28rpx;
+  color:#3d3d3d;
+  height:50rpx;
+  font-weight: bolder;
+  margin-left: 20rpx;
+}
+.title text:nth-child(3){
+  font-size: 26rpx;
+  color:#b5b5b5;
+  /* display: inline-block;
+  width: 100%;
+  height:40rpx; */
+}
+.title text:nth-child(4){
+  font-size: 36rpx;
+  font-weight: bolder;
+  color:#d4104e;
+}
+.title text:nth-child(5){
+  font-size: 24rpx;
+  color:#bebebe;
+  text-decoration: line-through;
+}
+.title text:nth-child(6){
+ font-size: 26rpx;
+  color:#727272;
+}
+.title text:nth-child(7){
+ font-size: 26rpx;
+  color:#787878;
+  margin-left: 400rpx;
+}
+.num{
+  width: 100%;
+  height:164rpx;
+  border-top:2rpx solid #dbdbdb;
+  /* border-bottom:2rpx solid #f2f2f2; */
+}
+.num .numbuy{
+  display: inline-block;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  color:#313131;
+  margin-left: 20rpx;
+}
+/*主容器*/  
+.stepper { 
+    margin-top:-50rpx;
+    margin-left: 180rpx; 
+    width: 180rpx;  
+    height: 52rpx;  
+    /*给主容器设一个边框*/  
+    border: 1rpx solid #ccc;  
+    border-radius: 6rpx;    
+}   
+/*加号和减号*/  
+.stepper text {  
+    width: 40rpx;  
+    line-height: 52rpx;  
+    text-align: center;  
+    float: left;  
+}   
+/*数值*/  
+.stepper input {  
+    width: 80rpx;  
+    height: 52rpx;  
+    float: left;  
+    text-align: center;  
+    font-size: 24rpx;  
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1rpx solid #ccc;  
+    border-right: 1rpx solid #ccc;  
+}  
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}    
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  
+.totle{
+  display: inline-block;
+  font-size: 28rpx;
+  color:#383838;
+  font-weight: bolder;
+  margin-left: 20rpx;
+  padding: 20rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import "../index/index.wxss" */

@@ -1,4 +1,33 @@
-
-<view>
-    <view>我的页面</view>
+<view class="all">
+<view class="top">
+ <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+  <view class="nickname">{{userInfo.nickName}}</view>
+</view>
+<text>全部订单</text>
+<text>待付款</text>
+<text>待发货</text>
+<text>待收货</text>
+<text>待评价</text>
+<view class="mcont">
+  <view class="con" bindtap="funa">
+  <image src="../../img/yhj.svg"></image>
+  <navigator>优惠券</navigator>
+  <image src="../../img/jkh.svg"></image>
+</view>
+<view class="con" bindtap="funa">
+  <image src="../../img/sc.svg"></image>
+  <navigator>我的收藏</navigator>
+  <image src="../../img/jkh.svg"></image>
+</view>
+<view class="con conl" bindtap="funa">
+  <image src="../../img/zj.svg"></image>
+  <navigator>我的足迹</navigator>
+  <image src="../../img/jkh.svg"></image>
+</view>
+<view class="cust">
+  <image src="../../img/kf.svg"></image>
+  <button open-type="contact" plain>人工客服</button>
+  <image src="../../img/jkh.svg"></image>
+</view>
+</view>
 </view>

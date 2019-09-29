@@ -2,20 +2,37 @@
   width: 100%;
   height:1000rpx;
   display: flex;
+  /* position: relative; */
 }
 .sleft{
   width: 20%;
-  height:100%;
+  height:1450rpx;
+  background: white;
   border-right:1rpx solid #DCDCDC;
-  /* position: fixed;
-  top:0;
-  bottom:0;
+  position: fixed;
   left:0;
-  right:0rpx; */
+  top:0;
+}
+.sleft text{
+font-size: 26rpx;
+font-weight: bolder;
+color:#323232;
+display: inline-block;
+width: 130rpx;
+height:100rpx;
+text-align: center;
+line-height: 100rpx;
+}
+.sleft .active{
+  color:#4697e4;
+  border-left: 4rpx solid #4697e4;
 }
 .sright{
+  margin-top:120rpx;
+  position: absolute;
+  left:20%;
+  top:0;
   width: 80%;
-  /* height:2000rpx;   */
   border-top:1rpx solid #E3E3E3;
 }
 .stop{
@@ -25,9 +42,7 @@
   overflow: hidden;
   position: fixed;
   top:0;
-  bottom:0;
   left:20%;
-  right:0rpx;
 }
 .stop input{
   width: 550rpx;
@@ -45,9 +60,8 @@
   left: 200rpx;
 }
 .tema{
-  margin-top:120rpx;
   width:95%;
-  height: 120rpx;
+  height: 130rpx;
   display: flex;
   border-bottom:2rpx solid #F2F2F2;
   margin-left: 30rpx;
@@ -55,15 +69,21 @@
 .tema image{
   width: 70rpx;
   height:70rpx;
-  margin: 20rpx 20rpx 20px 0;
+  margin: 25rpx 20rpx 20px 0;
 }
 .txtBox{
-  margin-top: 15rpx;
+  margin-top: 20rpx;
 }
 .txtBox text:nth-child(1){
-  font-size:30rpx;
+  font-size:26rpx;
   font-weight: bold;
   color:#515151;
+  width: 390rpx;
+  display: block;
+  white-space: nowrap;
+/* 小程序单行文本添加省略号 */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .txtBox text:nth-child(2){
   font-size:30rpx;

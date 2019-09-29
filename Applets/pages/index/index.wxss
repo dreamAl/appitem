@@ -93,17 +93,14 @@ input{
   margin: 10rpx;
 }
 .line{
-  width: 79%;
+  width: 85%;
   height: 50rpx;
-  display: flex;
+  display: block;
   white-space: nowrap;
 /* 小程序单行文本添加省略号 */
-  display:-webkit-box;
   -webkit-line-clamp:1;
   overflow: hidden;
-   text-overflow: ellipsis;
-  -webkit-box-orient:vertical;
-  word-break: break-all;  
+  text-overflow: ellipsis;
 }
 .one{
   width: 150rpx;

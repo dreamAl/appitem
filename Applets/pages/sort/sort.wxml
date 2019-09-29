@@ -1,7 +1,7 @@
 <view class="sBox">
 <!-- 左边分栏 -->
 <view class="sleft">
-
+  <text bindtap="funa"  wx:for="{{obj}}"  data-id="{{item.id}}" wx:key="{{index}}" class="{{currentTab==index ?'active' : ''}}">{{item.cate_name}}</text>
 </view>
 <!-- 右边分栏 -->
 <view class="sright">
@@ -11,8 +11,9 @@
 </view>
 <view class="temBox">
 <import src="tem.wxml"/>
-<template is="stem"></template>
+<block  wx:for="{{newarr}}" wx:key="{{index}}">
+<template is="stem" data="{{...item}}"></template>
+</block>
 </view>
-
 </view>
 </view>

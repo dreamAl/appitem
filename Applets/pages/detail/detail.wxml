@@ -1,10 +1,37 @@
-<view>
+<view >
 <swiper class="dsw" autoplay indicator-dots>
 <swiper-item>
-<image src="../../img/1.jpg" mode="widthFix" ></image>
+<image src="../../img/1.jpg"></image>
 </swiper-item>
 <swiper-item>
-<image src="../../img/1.jpg" mode="widthFix"></image>
+<image src="../../img/1.jpg"></image>
 </swiper-item>
 </swiper>
 </view>
+<view class="title" bindtap="fun">
+<!-- <import src="../index/search.wxml" />
+  <block  wx:for="{{newarr}}" wx:key="{{index}}">
+<template is="stem" data="{{...item}}"></template>
+  </block> -->
+<text class="tits">买2件加送24片</text>
+<text>WIS水润面膜套装24片 深透补水 薄透鲜薄</text>
+<text>\n深透补水 薄透鲜薄 坚持补水让肌肤美丽脱变</text>
+<text>\n￥98.00</text>
+<text>￥299.00</text>
+<text space="emsp" >\n邮费： 免运费</text>
+<text class="postwo">广东广州</text>
+</view>
+<view class="num">
+<text class="numbuy">购买数 :</text>
+<view class="stepper">
+  <!-- 减号 -->  
+    <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+    <!-- 数值 -->  
+    <input type="number" bindchange="bindManual" value="{{num}}" />  
+    <!-- 加号 -->  
+    <text class="normal" bindtap="bindPlus">+</text>  
+</view>
+<text class="totle">合计：￥98.00</text>
+</view>
+
+

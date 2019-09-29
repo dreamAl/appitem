@@ -1,10 +1,10 @@
 <template name="stem">
-<view class="tema">
-  <image src="../../img/1.jpg"></image>
+<view class="tema" bindtap="func">
+  <image src="{{image}}"></image>
   <view class="txtBox">
-  <text>我我我我我我我我我</text>
-  <text>￥98.00/n</text>    
-  <text>299.00</text>
+  <text>{{product_name}}\n</text>
+  <text>{{real_price}} \t</text>    
+  <text>{{original_price}}</text>
   </view>
 </view>
 </template>
