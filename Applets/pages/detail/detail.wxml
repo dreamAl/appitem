@@ -1,11 +1,10 @@
 <view >
 <swiper class="dsw" autoplay indicator-dots>
+<block wx:for="{{obj}}" wx:key="{{index}}">
 <swiper-item>
-<image src="../../img/1.jpg"></image>
+<image src="{{detail.lunbo_image}}" ></image>
 </swiper-item>
-<swiper-item>
-<image src="../../img/1.jpg"></image>
-</swiper-item>
+</block>
 </swiper>
 </view>
 <view class="title" bindtap="fun">
@@ -32,6 +31,29 @@
     <text class="normal" bindtap="bindPlus">+</text>  
 </view>
 <text class="totle">合计：￥98.00</text>
+</view>
+<view class="bto">
+<view class="zprz">
+<image src="../../img/dg.svg" ></image>
+<text>正品认证</text>
+</view>
+<view class="zprz">
+<image src="../../img/dg.svg" ></image>
+<text>企业认证</text>
+</view>
+<view class="zprz">
+<image src="../../img/dg.svg" ></image>
+<text>担保交易</text>
+</view>
+</view>
+<view class="disc">
+<text>商品详情</text>
+<text>参数</text>
+<text>评价</text>
+</view>
+<view class="spms">
+<text>商品描述</text>
+<image src="../../img/1.jpg"></image>
 </view>
 
 

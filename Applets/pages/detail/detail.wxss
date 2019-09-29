@@ -75,7 +75,6 @@
   width: 100%;
   height:164rpx;
   border-top:2rpx solid #dbdbdb;
-  /* border-bottom:2rpx solid #f2f2f2; */
 }
 .num .numbuy{
   display: inline-block;
@@ -128,11 +127,40 @@
   margin-left: 20rpx;
   padding: 20rpx;
 }
-
-
-
-
-
+.bto{
+  width: 100%;
+  height:80rpx;
+  display: flex;
+  border-top:1rpx solid #f2f2f2;
+}
+.zprz{
+  width: 200rpx;
+  height:80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zprz image{
+  width: 30rpx;
+  height:30rpx;
+}
+.zprz text{
+  margin-left: 10rpx;
+ font-size: 24rpx;
+ color:#313131;
+}
+.disc{
+  border-top:1rpx solid #f2f2f2;
+  width: 100%;
+  height:60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.disc text{
+  font-size: 26rpx;
+  color:#313131;
+}
 
 
 

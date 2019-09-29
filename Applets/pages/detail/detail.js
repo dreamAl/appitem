@@ -1,10 +1,11 @@
-var dataobj = require("../../data/sort.js")
+var dataobj = require("../../data/all.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    obj:"",
     // input默认是1  
     num: 1,
     // 使用data数据对象设置样式名  
@@ -50,9 +51,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    this.setData({ obj: dataobj.titList.items })
-
+    this.setData({ obj: dataobj.postList.items})
+    console.log(dataobj.postList.items)
   },
 
   /**
