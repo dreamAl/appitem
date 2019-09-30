@@ -2,7 +2,7 @@
 <template name="searchTem">
   <view class="searchBox">
   <form>
-    <input type="text" placeholder="搜索热门产品"         placeholder-style="color:#353535" ></input>
+    <input type="text" placeholder="搜索热门产品" placeholder-style="color:#353535" ></input>
     <view class="seaImg">
     <image src="../../img/ss.png"></image>
     </view>
@@ -12,7 +12,7 @@
 
 <!-- 商品列表组件 -->
 <template name="listTem">
-    <view class="listBox" bindtap="fune">
+    <view class="listBox" bindtap="fune" data-id="{{id}}">
       <image src="{{image}}" class="imgStyle" lazy-load></image>
     <view class="textBox">
     <view class="line">

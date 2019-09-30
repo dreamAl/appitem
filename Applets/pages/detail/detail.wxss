@@ -1,3 +1,6 @@
+page{
+  background: #efefef;
+}
 .dsw{
   width: 100%;
   height:828rpx;
@@ -25,10 +28,10 @@
     background:#3371aa; 
 }
 .title{
-  width: 95%;
+  width: 100%;
   height:242rpx;
-  margin:20rpx;
-  /* background: pink; */
+  padding:20rpx;
+  background: white;
 }
 .title .tits{
   font-size: 20rpx;
@@ -53,6 +56,10 @@
   height:40rpx; */
 }
 .title text:nth-child(4){
+  display: inline-block;
+  width: 300rpx;
+  height:30rpx;
+  /* background: pink; */
   font-size: 36rpx;
   font-weight: bolder;
   color:#d4104e;
@@ -63,8 +70,8 @@
   text-decoration: line-through;
 }
 .title text:nth-child(6){
- font-size: 26rpx;
-  color:#727272;
+font-size: 26rpx;
+color:#727272;
 }
 .title text:nth-child(7){
  font-size: 26rpx;
@@ -74,6 +81,7 @@
 .num{
   width: 100%;
   height:164rpx;
+  background: white;
   border-top:2rpx solid #dbdbdb;
 }
 .num .numbuy{
@@ -131,6 +139,7 @@
   width: 100%;
   height:80rpx;
   display: flex;
+  background: white;
   border-top:1rpx solid #f2f2f2;
 }
 .zprz{
@@ -155,16 +164,58 @@
   height:60rpx;
   display: flex;
   align-items: center;
+   background: white;
   justify-content: space-around;
 }
 .disc text{
   font-size: 26rpx;
   color:#313131;
 }
-
-
-
-
+.linstop{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.spms .lines{
+  width: 40%;
+  margin:30rpx 10rpx;
+  border-top:1rpx solid #cecece;
+}
+.spms text{
+  font-size: 26rpx;
+  color:#959595;
+}
+.footcon{
+  width: 100%;
+  height:90rpx;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+.footBar{
+  display: flex;
+  flex-direction: column;
+}
+.footBar image{
+  width: 32rpx;
+  height:32rpx;
+}
+.footBar text{
+  font-size: 20rpx;
+  color:#242424;
+}
+.footxt{
+display: inline-block;
+padding:20rpx;
+background: #f97b7c;
+font-size: 30rpx;
+  color:white;
+}
+.footcon .footxtow{
+  background: #fc504e;
+}
 
 
 

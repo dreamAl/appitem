@@ -1,22 +1,18 @@
 <view >
 <swiper class="dsw" autoplay indicator-dots>
-<block wx:for="{{obj}}" wx:key="{{index}}">
+<block wx:for="{{newobj.detail.lunbo_image}}" wx:key="{{index}}">
 <swiper-item>
-<image src="{{detail.lunbo_image}}" ></image>
+<image src="{{item.image}}" ></image>
 </swiper-item>
 </block>
 </swiper>
 </view>
 <view class="title" bindtap="fun">
-<!-- <import src="../index/search.wxml" />
-  <block  wx:for="{{newarr}}" wx:key="{{index}}">
-<template is="stem" data="{{...item}}"></template>
-  </block> -->
-<text class="tits">买2件加送24片</text>
-<text>WIS水润面膜套装24片 深透补水 薄透鲜薄</text>
-<text>\n深透补水 薄透鲜薄 坚持补水让肌肤美丽脱变</text>
-<text>\n￥98.00</text>
-<text>￥299.00</text>
+<text class="tits">{{newobj.label}}</text>
+<text>{{newobj.product_name}}</text>
+<text>\n{{newobj.description}}</text>
+<text>\n{{newobj.real_price}}</text>
+<text>{{newobj.original_price}}</text>
 <text space="emsp" >\n邮费： 免运费</text>
 <text class="postwo">广东广州</text>
 </view>
@@ -30,7 +26,7 @@
     <!-- 加号 -->  
     <text class="normal" bindtap="bindPlus">+</text>  
 </view>
-<text class="totle">合计：￥98.00</text>
+<text class="totle">合计：{{newobj.real_price}}</text>
 </view>
 <view class="bto">
 <view class="zprz">
@@ -46,14 +42,23 @@
 <text>担保交易</text>
 </view>
 </view>
+<view></view>
 <view class="disc">
 <text>商品详情</text>
 <text>参数</text>
 <text>评价</text>
 </view>
 <view class="spms">
+<view class="linstop">
+<view class="lines"></view>
 <text>商品描述</text>
-<image src="../../img/1.jpg"></image>
+<view class="lines"></view>
 </view>
-
-
+<block wx:for="{{newobj.detail.detail_image}}">
+<cover-image src="{{item.image}}"></cover-image>
+</block>
+</view>
+<view>
+<import src="footem.wxml" />
+<template is="temf"></template>
+</view>

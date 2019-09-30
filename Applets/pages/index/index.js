@@ -74,7 +74,6 @@ Page({
              return v
            }
          })
-         // console.log(arr1[0].data)
          this.setData({
            newarr: arr1[0].data
          })
@@ -86,17 +85,18 @@ Page({
       bool:!this.data.bool
     })
   },
-  fune(){
+  fune(e){
     wx.navigateTo({
-      url: '../detail/detail',
+      url: '../detail/detail?id=' + e.currentTarget.dataset.id,
     })
+    console.log(e.currentTarget.dataset.id)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({arr:datarr.postList})
-    console.log(dataobj.titList)
+    // console.log(dataobj.titList)
     this.setData({ obj: dataobj.titList.items })
     this.funa()
   },

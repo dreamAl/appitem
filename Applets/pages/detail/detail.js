@@ -6,6 +6,7 @@ Page({
    */
   data: {
     obj:"",
+    newobj:"",
     // input默认是1  
     num: 1,
     // 使用data数据对象设置样式名  
@@ -47,14 +48,33 @@ Page({
       num: num
     });
   } , 
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({ obj: dataobj.postList.items})
-    console.log(dataobj.postList.items)
+    this.setData({ obj: dataobj.postList})
+    // console.log(options.id)
+    var ids = options.id;
+    var arr = dataobj.postList.items;
+    for(var i in arr){
+      // console.log(arr[i].data)
+      var arr1 = arr[i].data;
+      for(var i in arr1){
+        // console.log(arr1[i].id)
+        var id1 = arr1[i].id
+        if(ids == id1){
+          // console.log(id1)
+          // console.log(arr1[i])
+          this.setData({
+            newobj: arr1[i]
+          })
+        }
+      }
+    }
+    console.log(this.data.newobj)
+    console.log(this.data.newobj.detail.lunbo_image)
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
