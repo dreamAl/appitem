@@ -9,7 +9,8 @@ Page({
     obj:"",
     newarr:[],
     currentTab:0,
-    bool:true
+    bool:true,
+    imgobj:""  
   },
   funa(e){
     // console.log(e)
@@ -85,11 +86,27 @@ Page({
       bool:!this.data.bool
     })
   },
+  // 首页商品列表跳转到商品详情
   fune(e){
     wx.navigateTo({
       url: '../detail/detail?id=' + e.currentTarget.dataset.id,
     })
     console.log(e.currentTarget.dataset.id)
+  },
+  // 首页轮播图的点击事件
+  funxq(e){
+    // console.log(e)
+    var idImg = e.currentTarget.dataset.imgid
+    var imgobj=this.data.arr.filter((v,i)=>{
+      if (v.id == idImg){
+        return v
+      }
+    })
+    // console.log(imgobj[0].image)
+    wx.previewImage({
+    current: 'imgobj[0].image',
+    urls: [imgobj[0].image]
+  })
   },
   /**
    * 生命周期函数--监听页面加载

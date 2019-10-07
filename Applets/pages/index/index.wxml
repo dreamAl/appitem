@@ -8,7 +8,7 @@
   <swiper autoplay  indicator-dots class="swpBox" circular>
   <block wx:for="{{arr}}" wx:key="{{index}}">
     <swiper-item>
-     <image src="{{item.image}}" class="imgBox" mode="widthFix"></image>
+     <image src="{{item.image}}" class="imgBox" mode="widthFix" bindtap="funxq" data-imgId="{{item.id}}"></image>
     </swiper-item>
   </block>
   </swiper>
