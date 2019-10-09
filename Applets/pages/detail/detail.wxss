@@ -1,5 +1,6 @@
 page{
   background: #efefef;
+  margin-bottom: 90rpx;
 }
 .dsw{
   width: 100%;
@@ -191,16 +192,22 @@ color:#727272;
   background: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
+  margin-top: 100rpx;
   bottom: 0;
+  z-index: 999;
+  border-top:2rpx solid #cfdefd;
 }
 .footBar{
+  width: 15%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .footBar image{
-  width: 32rpx;
-  height:32rpx;
+  width: 48rpx;
+  height:48rpx;
 }
 .footBar text{
   font-size: 20rpx;
@@ -208,20 +215,13 @@ color:#727272;
 }
 .footxt{
 display: inline-block;
-padding:20rpx;
+padding:26rpx;
 background: #f97b7c;
 font-size: 30rpx;
-  color:white;
+color:white;
+width: 155rpx;
 }
 .footcon .footxtow{
+  text-align: center;
   background: #fc504e;
 }
-
-
-
-
-
-
-
-
-/* @import "../index/index.wxss" */

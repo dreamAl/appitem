@@ -1,5 +1,5 @@
 <template name="stem">
-<view class="tema" bindtap="func">
+<view class="tema" bindtap="func" data-id="{{id}}">
   <image src="{{image}}"></image>
   <view class="txtBox">
   <text>{{product_name}}\n</text>

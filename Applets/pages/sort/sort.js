@@ -77,10 +77,12 @@ Page({
       wx.hideLoading()
     }, 1000)
   },
-  func(){
+  // 点击商品分类跳转相应的商品详情
+  func(e) {
     wx.navigateTo({
-      url: '../detail/detail',
+      url: '../detail/detail?id=' + e.currentTarget.dataset.id,
     })
+    console.log(e.currentTarget.dataset.id)
   },
   /**
    * 生命周期函数--监听页面加载

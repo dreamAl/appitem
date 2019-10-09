@@ -1,7 +1,12 @@
 <view class="all">
 <view class="top">
- <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
-  <view class="nickname">{{userInfo.nickName}}</view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>
 </view>
 <text>全部订单</text>
 <text>待付款</text>
@@ -29,5 +34,12 @@
   <button open-type="contact" plain>人工客服</button>
   <image src="../../img/jkh.svg"></image>
 </view>
+<view class="con conmap" bindtap="funb">
+  <image src="../../img/ad.svg"></image>
+  <text>公司地址</text>
+</view>
+  <view class="mapView">
+   <map longitude="113.439834" latitude="23.167932" scale="14" show-location style="width: 100%; height:350px;"markers="{{map.markers}}" callout="{{map.markers}}"></map>
+  </view>
 </view>
 </view>
